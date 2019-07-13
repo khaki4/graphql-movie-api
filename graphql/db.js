@@ -32,7 +32,7 @@ export const getById = id => {
 export const deleteMovie = id => {
   const cleanedMovies = _.reject(movies, movie => id === movie.id);
   return movies.length > cleanedMovies.length
-    ? ((movie = cleanedMovies), true)
+    ? ((movies = cleanedMovies), true)
     : false;
 };
 
